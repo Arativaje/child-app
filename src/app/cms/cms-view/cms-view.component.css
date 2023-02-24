@@ -1,0 +1,14 @@
+table {
+    width: 100%;
+  }
+
+  .header-box{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px
+  }
+  .action-button button{
+    margin: 0px 7px;
+  }
+

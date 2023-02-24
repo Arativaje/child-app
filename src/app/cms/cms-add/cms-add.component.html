@@ -1,0 +1,39 @@
+<div class="add-form-box">
+
+  <mat-card class="card-view">
+    <mat-card-header>
+      <div class="header-box">
+        <div class="header-box-title">
+          <h2>Add Details</h2>
+        </div>
+      </div>
+
+    </mat-card-header>
+    <mat-card-content>
+      <form class="example-form" [formGroup]="addForm">
+        <mat-form-field  class="example-full-width">
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="name">
+          <mat-error *ngIf="addForm.controls['name'].invalid && addForm.controls['name'].touched">
+            Please enter the name
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field  class="example-full-width">
+          <mat-label>Image URL</mat-label>
+          <input matInput formControlName="imageUrl">
+          <mat-error *ngIf="addForm.controls['imageUrl'].invalid && addForm.controls['imageUrl'].touched">
+            Please enter the image url
+          </mat-error>
+        </mat-form-field>
+        <div class="action-button">
+          <button mat-raised-button color="warn" (click)="saveForm()">Cancel</button>
+          <button mat-raised-button color="primary" (click)="saveForm()">Save</button>
+
+        </div>
+      </form>
+    </mat-card-content>
+
+  </mat-card>
+
+</div>

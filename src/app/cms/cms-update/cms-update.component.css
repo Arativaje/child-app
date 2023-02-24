@@ -1,0 +1,28 @@
+/* :host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  } */
+  .add-form-box {
+    display: flex;
+    justify-content: center;
+    /* width: 100%; */
+}
+
+.action-button button{
+  margin: 0px 7px;
+}
+.add-form-box{
+  margin-top: 15px;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+

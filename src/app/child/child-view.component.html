@@ -1,0 +1,24 @@
+
+  <div class="child-view">
+    <mat-card class="card-view">
+      <mat-card-content>
+        <div class="content-view">
+          <div class="title-view">
+            {{arr[current].name}}
+          </div>
+          <div class="image-view">
+            <img mat-card-image class="char-img" [src]="arr[current].imageUrl" alt="Photo of a Shiba Inu">
+          </div>
+        </div>
+      </mat-card-content>
+      <mat-card-actions class="card-button">
+        <button mat-fab color="primary" (click)="onPrevious()">
+          <mat-icon>arrow_backward</mat-icon>
+        </button>
+        <button mat-fab color="primary" (click)="onNext()">
+          <mat-icon>arrow_forward</mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  
