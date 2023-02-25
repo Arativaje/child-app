@@ -1,0 +1,43 @@
+<mat-card >
+<mat-card-content style="display: flex; justify-content: space-around;width: 100%;">
+
+
+  <mat-card style="width: 45%;padding: 15px;">
+    <mat-card-title>Question</mat-card-title>
+    <mat-card-subtitle>
+      Pick your favorite season
+    </mat-card-subtitle>
+  </mat-card>
+  <mat-card style="width: 45%;padding: 15px;">
+    <!-- <mat-card-header> -->
+      <mat-card-content>
+        <mat-card-title>Options</mat-card-title>
+        <mat-card-subtitle>
+          <mat-list>
+            <mat-radio-group [(ngModel)]="favoriteSeason">
+              <div *ngFor="let season of seasons">
+                <mat-list-item>
+                  <mat-radio-button [value]="season">
+                    {{season}}
+                  </mat-radio-button>
+                  
+                </mat-list-item>
+                <mat-divider></mat-divider>
+          </div>
+        </mat-radio-group>
+      </mat-list>
+    </mat-card-subtitle>
+    <!-- </mat-card-header> -->
+    <!-- <mat-card-content> -->
+      <div>Your favorite season is: {{favoriteSeason}}</div>
+    </mat-card-content>
+  
+  </mat-card>
+</mat-card-content>  
+  <mat-card-footer>
+    <mat-card-actions>
+      <button mat-button>Submit</button>
+      <button mat-button>Next</button>
+    </mat-card-actions>
+  </mat-card-footer>
+</mat-card>
