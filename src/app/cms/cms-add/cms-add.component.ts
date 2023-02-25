@@ -15,8 +15,8 @@ addForm: FormGroup;
   constructor(private router:Router, private fb: FormBuilder, private cmsService:CmsService){
 
     this.addForm = this.fb.group({
-      "name":["",Validators.required],
-      "imageUrl" :["",Validators.required]
+      name:["",Validators.required],
+      imageUrl :["",Validators.required]
     });
   }
   saveForm(){

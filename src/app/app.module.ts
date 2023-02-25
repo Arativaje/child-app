@@ -21,7 +21,12 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { HttpClientModule } from '@angular/common/http';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProfileComponent } from './profile/profile.component';
+import { QuizComponent } from './quiz/quiz.component';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatListModule} from '@angular/material/list';
+import {MatRadioModule} from '@angular/material/radio';
 
 
 
@@ -34,6 +39,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     CmsAddComponent,
     CmsUpdateComponent,
     CmsViewComponent,
+    ProfileComponent,
+    QuizComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,11 +57,20 @@ import { ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     MatFormFieldModule,
     MatInputModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDividerModule,
+    MatListModule,
+    MatRadioModule,
+    FormsModule      
 
     
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+  constructor(){
+    console.log('app-module constructor');
+  }
+ }

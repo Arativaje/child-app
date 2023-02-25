@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'child-learning';
+  name ='Maayra';
+  constructor(){
+    console.log('app-component constructor');
+  }
+  ngOnInit(){
+    console.log('app-component ngOnInit');
+  }
 }
